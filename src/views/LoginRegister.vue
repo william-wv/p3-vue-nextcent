@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import HeaderNavbar from '@/components/HeaderNavbar.vue';
 
 const isRegister = ref(false);
 const name = ref('');

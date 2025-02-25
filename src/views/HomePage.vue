@@ -1,9 +1,11 @@
 <script setup>
+import OurClients from '@/components/OurClients.vue';
+
 
 </script>
 
 <template>
-  <main>
+  <section>
     <div class="container d-flex">
       <div class="element-1 col-7">
         <div class="container-h1">
@@ -20,12 +22,15 @@
         <img src="../assets/images/Header-Page/Illustration.svg" alt="">
       </div>
     </div>
-  </main>
+  </section>
+  <OurClients/>
+  
+  
 </template>
 
 <style scoped>
 /* padrao: 1440 */
-main {
+section {
   background-color: var(--Silver);
 }
 

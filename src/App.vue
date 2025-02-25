@@ -12,3 +12,6 @@ import HeaderNav from './components/HeaderNavbar.vue'
 </template>
 
 <style scoped></style>
+
+
+
