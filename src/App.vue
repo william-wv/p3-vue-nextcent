@@ -7,8 +7,9 @@ import HeaderNav from './components/HeaderNavbar.vue'
 <template>
 
   <HeaderNav/>
-
+  
   <router-view />
+
 </template>
 
 <style scoped></style>

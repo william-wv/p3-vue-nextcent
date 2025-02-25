@@ -1,4 +1,5 @@
 <script setup>
+import CommunityArea from '@/components/CommunityArea.vue';
 import OurClients from '@/components/OurClients.vue';
 
 
@@ -23,7 +24,10 @@ import OurClients from '@/components/OurClients.vue';
       </div>
     </div>
   </section>
+  
   <OurClients/>
+  <CommunityArea/>
+
   
   
 </template>
@@ -35,7 +39,7 @@ section {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: var(--D_Gray);
 }
 

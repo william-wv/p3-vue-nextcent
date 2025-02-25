@@ -43,9 +43,7 @@ header {
   background-color: var(--Silver);
 }
 
-router-link {
-  color: var(--Primary) !important;
-}
+
 
 h3 {
   margin-left: 5px;
@@ -59,7 +57,7 @@ h3 {
 .container {
   padding: 0;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .ul-header {
@@ -70,12 +68,12 @@ h3 {
 
 }
 
-
-
 @media (min-width:1550px) {
   .container {
     align-items: center;
     justify-content: space-between;
   }
 }
+
+
 </style>

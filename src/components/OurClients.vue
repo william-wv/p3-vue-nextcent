@@ -1,13 +1,13 @@
 <script setup>
 
 const listaDeImagens = [
-  { src: '/public/Icons-Clients/cli-1.svg', alt: 'Imagem 1' },
-  { src: '/public/Icons-Clients/cli-2.svg', alt: 'Imagem 2' },
-  { src: '/public/Icons-Clients/cli-3.svg', alt: 'Imagem 3' },
-  { src: '/public/Icons-Clients/cli-4.svg', alt: 'Imagem 4' },
-  { src: '/public/Icons-Clients/cli-5.svg', alt: 'Imagem 5' },
-  { src: '/public/Icons-Clients/cli-6.svg', alt: 'Imagem 6' },
-  { src: '/public/Icons-Clients/cli-7.svg', alt: 'Imagem 7' }
+  {id:0, src: '/public/Icons-Clients/cli-1.svg', alt: 'Imagem 1' },
+  {id:1, src: '/public/Icons-Clients/cli-2.svg', alt: 'Imagem 2' },
+  {id:2, src: '/public/Icons-Clients/cli-3.svg', alt: 'Imagem 3' },
+  {id:3, src: '/public/Icons-Clients/cli-4.svg', alt: 'Imagem 4' },
+  {id:4, src: '/public/Icons-Clients/cli-5.svg', alt: 'Imagem 5' },
+  {id:5, src: '/public/Icons-Clients/cli-6.svg', alt: 'Imagem 6' },
+  {id:6, src: '/public/Icons-Clients/cli-7.svg', alt: 'Imagem 7' }
 ]
 </script>
 
@@ -18,7 +18,7 @@ const listaDeImagens = [
       <h3 class="h3-clients">We have been working with some Fortune 500+ clients</h3>
 
       <div class="d-flex cards">
-        <img v-for="(img, index) in listaDeImagens" :key="index" :src="img.src" :alt="img.alt" />
+        <img v-for="(img) in listaDeImagens" :key="listaDeImagens.id" :src="img.src" :alt="img.alt" />
       </div>
     </div>
 
