@@ -51,7 +51,7 @@ main {
 
 h1,h2,h3,li,p,a {
   font-family: "Inter", serif;
-  color: var(--D_Gray);
+  color: var(--D_Gray) !important;
 }
 
 a {
