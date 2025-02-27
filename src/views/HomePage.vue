@@ -1,7 +1,7 @@
 <script setup>
 import CommunityArea from '@/components/CommunityArea.vue';
 import OurClients from '@/components/OurClients.vue';
-
+import AdCard from '@/components/AdCard.vue';
 
 </script>
 
@@ -24,10 +24,14 @@ import OurClients from '@/components/OurClients.vue';
       </div>
     </div>
   </section>
-  
+
   <OurClients/>
   <CommunityArea/>
-
+  <AdCard 
+    img="/rafiki.svg"
+    title="The unseen of spending three years at Pixelgrade"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio."
+  />  
   
   
 </template>
@@ -70,6 +74,29 @@ img {
 button {
   margin: 0;
 }
+@media (max-width: 768px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+  }
+
+  .element-1 {
+    padding: 50px 0;
+  }
+
+  h1{
+    font-size: 2.5rem !important;
+  }
+
+  img{
+    height: 200px;
+  }
+  }
+
+
 
 @media (min-width:1633px){
   h1{

@@ -14,19 +14,19 @@ import CardCommunity from './CardCommunity.vue';
     <div class="container-cards ">
       <CardCommunity 
         id=1 
-        image="/public/community/community-3.svg" 
+        image="/community/community-3.svg" 
         title="Membership Organisations"
         subtitle="Our membership management software provides full automation of membership renewals and payments"
       />
       <CardCommunity 
         id=1 
-        image="/public/community/community-2.svg" 
+        image="/community/community-2.svg" 
         title="National Associations"
         subtitle="Our membership management software provides full automation of membership renewals and payments"
       />
       <CardCommunity 
         id=1 
-        image="/public/community/community-1.svg" 
+        image="/community/community-1.svg" 
         title="Clubs And Groups"
         subtitle="Our membership management software provides full automation of membership renewals and payments"
       />
@@ -59,12 +59,18 @@ import CardCommunity from './CardCommunity.vue';
     gap: 50px;
   }
 
-  
-
-  @media (min-width:768px) and (max-width:990px) {
-  .container-cards{
-    display: grid;
-    grid-template-columns: 230px 230px 230px;
+  @media (max-width: 768px) {
+    .container-cards{ 
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    }
   }
-}
+  
+  @media (min-width:769px) and (max-width:1024px) {
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  }
 </style>

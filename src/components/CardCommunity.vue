@@ -25,5 +25,18 @@ const props = defineProps({
 h1 {
   font-size: 2.2rem;
 }
-
+@media (max-width: 768px) {
+    
+    h1{
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .container {
+    margin: 0 !important;
+    padding: 0 30px;
+    
+  }
 </style>
